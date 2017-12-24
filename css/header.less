@@ -1,0 +1,102 @@
+.header {
+    padding: 10px 0;
+    background: #fff;
+    float: left;
+    width: 100%;
+    .logo {
+        float: left;
+        width: 15%;
+        position: relative;
+        &:after {
+            background: #edf1f7;
+            height: 30px;
+            width: 2px;
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            -webkit-transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -ms-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+    }
+    .logo_img {
+        width: 50px;
+        height: 50px;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        float: left;
+    }
+    a span {
+        font-size: 12px;
+        color: #252525;
+        font-weight: 300;
+        float: left;
+        line-height: 45px;
+    }
+    .nav_menu {
+        float: left;
+        ul {
+            li {
+                display: inline-block;
+                margin-left: 32px;
+                line-height: 40px;
+                position: relative;
+                a {
+                    font-family: @secondary-font;
+                    font-size: 14px;
+                    color: #7e8c9a;
+                    text-transform: capitalize;
+                    text-decoration: none;
+                    &:after {
+                        content: '';
+                        position: absolute;
+                        width: 0px;
+                        height: 2px;
+                        background: @blue-bg;
+                        left: 0;
+                        bottom: 6px;
+                        transition: all ease 0.5s;
+                    }
+                    &:hover:after {
+                        width: 27px;
+                    }
+                }
+
+            }
+            > li.active {
+                a {
+                    color: @color-text-dark-gray;
+                    &:after {
+                        width: 27px;
+                    }
+                }
+            }
+        }
+    }
+    .right_menu {
+        float: right;
+
+        .profile_wrap,
+        .icons_wrap {
+            float: right;
+            p {
+                display: inline-block;
+                font-family: @secondary-font;
+                font-size: 12px;
+                color: @color-text-gray;
+                font-weight: 600;
+                padding: 0 10px;
+            }
+            .prof_img {
+                display: inline-block;
+                border-radius: 4px;
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}

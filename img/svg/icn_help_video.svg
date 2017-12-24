@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="15" height="9" viewBox="0 0 15 9">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Camera" class="cls-1" d="M2042,955l-3,2.625V954h-12v9h12v-3.7l3,2.413V955Zm-4,7h-10v-7h10v7Zm3-2.37-1.44-1.162L2041,957.2v2.426Z" transform="translate(-2027 -954)"/>
+</svg>

@@ -1,0 +1,37 @@
+/** Select Button css start **/
+.select2{
+	float: left;
+}
+.select2-selection--single {
+	height: 45px !important; 
+	border-color: #d0d7dd !important;
+}
+.select2-selection__rendered {
+	line-height: 45px !important; 
+	padding-left: 	15px;
+	color: @color-text-dark-gray;
+	font-size: 	16px;
+	font-weight: 400;
+	text-transform: capitalize;
+	padding-left: 15px !important;
+}
+.select2.select2-container{
+	width: 200px !important;
+}
+.select2-selection__arrow {
+	height: 45px !important;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b{
+	transform: translateY(-50%);
+	height: auto;
+	background: none;
+	border: none;
+	right: 20px;
+	left: inherit;
+	&:after{
+		content: '\f107';
+		font-family: 'fontawesome';
+		color: @color-text-gray;
+	}
+}
+/** Select Button css end **/
